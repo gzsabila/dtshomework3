@@ -52,7 +52,7 @@ class Convert {
             return n1 - 273.15;
         }
         if (to == "re") {
-            return n1*(4/5) - 273.5;
+            return (n1 - 273.5)*(4/5);
         }
         if (to == "fah") {
             return (n1 - 273.15)*(9/5) + 32;
