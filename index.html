@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Temperature Conversion - HM 3 JS</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <style>
           .container {
             width: 80%;
@@ -22,7 +23,7 @@
         <form class="text-center border border-light p-5">
           <p class="h3 mb-4">Temperature Conversion</p>
           <div class="h4 mb-12">
-            <select name="from" id="from" onchange="select()">
+            <select class="mb-3" name="from" id="from" onchange="select()">
               <option value="cel">Celcius</option>
               <option value="fahr">Fahrenheit</option>
               <option value="rea">Reamur</option>
@@ -36,28 +37,26 @@
               <option value="kel">Kelvin</option>
             </select>
           </div>
-          <input type="number" name="inputvalue" id="nilai_in" class="form-control mb-3" 
-          placeholder="Input the value to convert" onkeypress="validate(event)" onkeyup="calc()"/>
-          <p class="h6 mb-4">=</p>
+          <input type="number" name="nilai_in" id="nilai_in" class="form-control mb-3" 
+          placeholder="Input value" onkeyup="calc()"/>
+          <p class="h6 mb-3">=</p>
           <input type="number" id="nilai_out" class="form-control mb-3" placeholder="Result" disabled/>
         </form>
+        <form class="text-center p-5">
+          <h5 class="mb-3">Change Background Color</h5>
+          <input class="form-control mb-3" id="color" control-id="ControlID-5">
+          <button type="button" class="btn btn-light" onclick="change()">Change</button>
+        </form>
       </div>
-      <div>
-        <h4>Change Background Color</h4>
-        <input class="form-control" id="color"/>
-        <button type="button" class="btn btn-light" onclick="change()">Change</button>
-      </div>
-
     </body>
-    <script src="/js/convert.js"></script>
-    <script src="/js/main.js"></script>
+    <script src="/convert.js"></script>
+    <script src="/main.js"></script>
     <script>
       function change() {
         document.body.style.backgroundColor =
-        document.querySelector("color").value;
+        document.getElementById("color").value;
       }
     </script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 </html>
     
