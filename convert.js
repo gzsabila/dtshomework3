@@ -59,4 +59,4 @@ class Convert {
         }
     }
 }
-module.exports = Convert;
+module.export = Convert;
