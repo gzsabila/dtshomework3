@@ -20,13 +20,13 @@ function select() {
       document.getElementById("nilai_out").value = res;
     }
     if (document.getElementById("from").value == "fahr") {
-      const res = calculate.fromFarenheit(
+      const res = calculate.fromFahrenheit(
         document.getElementById("to").value,
         parseInt(document.getElementById("nilai_in").value)
       );
       document.getElementById("nilai_out").value = res;
     }
-    if (document.getElementById("from").value == kel) {
+    if (document.getElementById("from").value == "kel") {
         const res = calculate.fromKelvin(
             document.getElementById("to").value,
             parseInt(document.getElementById("nilai_in").value)
