@@ -6,13 +6,13 @@ test("test cel to rea", () => {
 });
 
 test("test rea to fahr", () => {
-    const calc = new Convert();
-    expect(calc.fromReamur('fahr',25)).toBe(88.25);
+  const calc = new Convert();
+  expect(calc.fromReamur('fahr',25)).toBe(88.25);
 });
 
 test("test fahr to kel", () => {
-    const calc = new Convert();
-    expect(calc.fromFahrenheit('kel',25)).toBeCloseTo(269.261);
+  const calc = new Convert();
+  expect(calc.fromFahrenheit('kel',25)).toBeCloseTo(269.261);
 });
 
 test("test kel to rea", () => {
