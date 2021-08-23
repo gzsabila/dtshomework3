@@ -22,7 +22,7 @@
       <div class="container">
         <form class="text-center border border-light p-5">
           <p class="h3 mb-4">Temperature Conversion</p>
-          <div class="h4 mb-12">
+          <div class="h5">
             <select class="mb-3" name="from" id="from" onchange="select()">
               <option value="cel">Celcius</option>
               <option value="fahr">Fahrenheit</option>
@@ -43,7 +43,8 @@
           <input type="number" id="nilai_out" class="form-control mb-3" placeholder="Result" disabled/>
         </form>
         <form class="text-center p-5">
-          <h5 class="mb-3">Change Background Color</h5>
+          <h5 class="mb-2">Change Background Color</h5>
+          <label for="backgroundchange" class="form-label">RGB Colors and else</label>
           <input class="form-control mb-3" id="color" control-id="ControlID-5">
           <button type="button" class="btn btn-light" onclick="change()">Change</button>
         </form>
@@ -51,6 +52,7 @@
     </body>
     <script src="/convert.js"></script>
     <script src="/main.js"></script>
+    <!--background change-->
     <script>
       function change() {
         document.body.style.backgroundColor =
