@@ -52,7 +52,7 @@ class Convert {
             return nilai_in - 273.15;
         }
         if (to == "rea") {
-            return (nilai_in - 273.5) * (4 / 5);
+            return (nilai_in - 273.15) * (4 / 5);
         }
         if (to == "fahr") {
             return (nilai_in - 273.15) * (9 / 5) + 32;
