@@ -1,6 +1,6 @@
 class Convert {
     constructor() {
-        console.log("Convert as the new object")
+        console.log("Temperature Conversion CFrK")
     }
     fromCelcius(to, nilai_in) {
         if (to == "cel") {
